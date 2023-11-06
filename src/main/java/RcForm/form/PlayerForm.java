@@ -4,9 +4,7 @@ import RcForm.form.event.ServerSettingRequestEvent;
 import RcForm.form.window.FormRoot;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
-import cn.nukkit.event.player.PlayerServerSettingsRequestEvent;
 import cn.nukkit.network.protocol.ModalFormRequestPacket;
-import cn.nukkit.network.protocol.ServerSettingsRequestPacket;
 import cn.nukkit.network.protocol.ServerSettingsResponsePacket;
 
 import java.util.HashMap;
