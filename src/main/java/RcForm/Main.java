@@ -10,6 +10,7 @@ import RcForm.form.window.FormSimple;
 import cn.nukkit.Player;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
+import cn.nukkit.event.player.PlayerInteractEvent;
 import cn.nukkit.event.player.PlayerJoinEvent;
 import cn.nukkit.event.server.DataPacketReceiveEvent;
 import cn.nukkit.form.element.ElementLabel;
@@ -24,15 +25,6 @@ public class Main extends PluginBase implements Listener {
     public void onEnable(){
         this.getLogger().info("插件加载成功,作者：若尘");
         this.getServer().getPluginManager().registerEvents(this,this);
-    }
-
-    @EventHandler
-    public void onJoin(PlayerJoinEvent event){
-        Player player = event.getPlayer();
-        FormWindowCustom form = new FormWindowCustom("哈哈");
-        ElementLabel label = new ElementLabel("哈哈哈哈哈");
-        form.addElement(label);
-        player.addServerSettings(form);
     }
 
     @EventHandler
