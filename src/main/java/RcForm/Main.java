@@ -4,28 +4,19 @@ import RcForm.form.PlayerForm;
 import RcForm.form.event.FormCustomRespondEvent;
 import RcForm.form.event.FormModalRespondEvent;
 import RcForm.form.event.FormSimpleRespondEvent;
-import RcForm.form.event.ServerSettingRequestEvent;
 import RcForm.form.window.FormCustom;
 import RcForm.form.window.FormModal;
 import RcForm.form.window.FormSimple;
 import cn.nukkit.Player;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
-import cn.nukkit.event.player.PlayerInteractEvent;
 import cn.nukkit.event.player.PlayerJoinEvent;
-import cn.nukkit.event.player.PlayerServerSettingsRequestEvent;
-import cn.nukkit.event.player.PlayerSettingsRespondedEvent;
 import cn.nukkit.event.server.DataPacketReceiveEvent;
 import cn.nukkit.form.element.ElementLabel;
-import cn.nukkit.form.handler.FormResponseHandler;
 import cn.nukkit.form.window.FormWindowCustom;
-import cn.nukkit.form.window.FormWindowSimple;
 import cn.nukkit.network.protocol.DataPacket;
 import cn.nukkit.network.protocol.ModalFormResponsePacket;
 import cn.nukkit.plugin.PluginBase;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Main extends PluginBase implements Listener {
 
