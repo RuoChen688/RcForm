@@ -45,14 +45,6 @@ public class Main extends PluginBase implements Listener {
     }
 
     @EventHandler
-    public void onInteract(PlayerInteractEvent event){
-        Player player = event.getPlayer();
-        /*FormSimple form = new FormSimple("哈哈","呵呵呵呵呵呵");
-        form.setFormId(10086);
-        PlayerForm.showServerSetting(player,form);*/
-    }
-
-    @EventHandler
     public void onRespond(DataPacketReceiveEvent event){
         Player player = event.getPlayer();
         DataPacket packet = event.getPacket();
